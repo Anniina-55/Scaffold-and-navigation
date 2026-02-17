@@ -12,5 +12,5 @@ val Pink40 = Color(0xFF7D5260)
 
 val Beetroot = Color(0xFF640025)
 val BeetrootLight = Color(0xFF8A004C)
-val LightPink = Color(0xFF982B6F)
+val LightPink = Color(0xFFDE62AF)
 val Light = Color(0xFFFFF8F8)
