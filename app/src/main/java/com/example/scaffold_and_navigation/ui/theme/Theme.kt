@@ -12,10 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Beetroot,
-    secondary = BeetrootLight,
+    primary = BeetrootDarkMode,
+    secondary = BeetrootLightInDarkMode,
     tertiary = LightPink,
     primaryContainer = Beetroot,
+    onPrimaryContainer = Light,
+    onSurface = LightPink
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -23,7 +25,8 @@ private val LightColorScheme = lightColorScheme(
     secondary = BeetrootLight,
     tertiary = LightPink,
     primaryContainer = Beetroot,
-    onPrimaryContainer = Light
+    onPrimaryContainer = Light,
+    onSurface = Beetroot
 
 
 
