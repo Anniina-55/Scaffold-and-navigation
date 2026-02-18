@@ -17,10 +17,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.navigation.NavController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainTopAppBar() {
+fun MainTopBar(navController: NavController) {
 
     var expanded by remember {mutableStateOf(false)}
 
@@ -66,3 +67,5 @@ fun MainTopAppBar() {
         }
     )
 }
+
+

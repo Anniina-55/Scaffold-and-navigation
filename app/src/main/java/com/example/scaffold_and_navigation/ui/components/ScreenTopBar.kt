@@ -14,20 +14,25 @@ import androidx.navigation.NavController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+// parameters from parent
 fun ScreenTopBar(title: String, navController: NavController) {
     TopAppBar(
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
-            titleContentColor = MaterialTheme.colorScheme.primary,
+            titleContentColor = MaterialTheme.colorScheme.tertiary,
         ),
         title = {
-            Text(text = title)
+            Text(
+                text = title,
+                style = MaterialTheme.typography.bodyLarge,
+            )
         },
         navigationIcon = {
             IconButton(onClick = { navController.navigateUp() }) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                    contentDescription = "Back"
+                    contentDescription = "Back",
+                    tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
             }
         },
